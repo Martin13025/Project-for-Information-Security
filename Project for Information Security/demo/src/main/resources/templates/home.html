@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">Welcome!</div>
+    <!--COMMENT-->
+    <script>
+        var content = decodeURIComponent(location.search.split('content=')[1] || '');
+        let changed = document.getElementById('content').innerHTML = 'HACKED';
+        //console.log(changed);
+    </script>
+</body>
+</html>
